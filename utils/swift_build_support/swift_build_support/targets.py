@@ -272,6 +272,10 @@ class StdlibDeploymentTarget(object):
         "i386", "x86_64",
         "armv7", "armv7s", "armv7k", "armv7m", "armv7em",
         "arm64", "arm64e", "arm64_32"])
+    
+    Alpine = Platform("alpine", sdk_name='ALPINE', archs=[
+        "x86_64",
+        "aarch64"])                  
 
     Linux = Platform("linux", archs=[
         "x86_64",
@@ -312,6 +316,7 @@ class StdlibDeploymentTarget(object):
         AppleWatch, AppleWatchSimulator,
         XROS, XROSSimulator,
         Freestanding,
+        Alpine,
         Linux,
         LinuxStatic,
         FreeBSD,
