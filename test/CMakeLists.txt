@@ -108,6 +108,7 @@ function(get_test_dependencies SDK result_var_name)
      ("${SDK}" STREQUAL "WATCHOS_SIMULATOR") OR
      ("${SDK}" STREQUAL "XROS_SIMULATOR") OR
      ("${SDK}" STREQUAL "FREESTANDING") OR
+     ("${SDK}" STREQUAL "ALPINE") OR
      ("${SDK}" STREQUAL "LINUX") OR
      ("${SDK}" STREQUAL "LINUX_STATIC") OR
      ("${SDK}" STREQUAL "CYGWIN") OR
