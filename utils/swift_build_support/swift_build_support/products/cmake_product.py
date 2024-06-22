@@ -207,12 +207,12 @@ class CMakeProduct(product.Product):
                 swift_host_triple = 'x86_64-swift-linux-musl'
                 llvm_target_arch = 'X86'
 
-        elif host_target.startswith('alpine-aarch64'):
-            swift_host_triple = 'aarch64-swift-linux-musl'
+        elif host_target.startswith('aarch64-alpine'):
+            swift_host_triple = 'aarch64-alpine-linux-musl'
             llvm_target_arch = 'AArch64'
             
-        elif host_target.startswith('alpine-x86_64'):
-            swift_host_triple = 'x86_64-swift-linux-musl'
+        elif host_target.startswith('x86_64-alpine'):
+            swift_host_triple = 'x86_64-alpine-linux-musl'
             llvm_target_arch='X86'
 
         elif host_target.startswith('macosx') or \
